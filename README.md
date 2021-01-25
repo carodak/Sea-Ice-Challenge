@@ -6,6 +6,9 @@ The data are not provided here since it is big and confidential! :P
 ```
 
 ## Challenge
+Arctic sea ice drifts under the influence of winds and ocean currents. Ice motion is important - up to several kilometers a day. Tracking the movement of sea ice can be applied to different research questions, including the transition from older sea ice to a younger seasonal ice pack, the transport of ice-rafted sediments, or pollutants in the context of an oil spill, and the risk assessment associated with navigation and marine operations in the Arctic.
+
+## Summary
 Basically, we want to track the movement of the ice. To track the ice movement, we need the ice velocity. To predict ice velocity, we have information (features) related to winds and the environment. We are given a formula (free drift of sea ice) if we want to combine some features to have less features. 
 And of course we cannot use the information at t+1 to predict the velocity at time t (in real life we don’t have information from the future).
 
@@ -33,3 +36,7 @@ id_buoy: can not be used for the prediction
 
 ## Objective
 Predict u_buoy, v_buoy with u_ERA5, v_ERA5 and any other feature we consider relevant
+
+## Results
+Best regressor model (RandomForest): 15 MSE with our CV method.
+We submitted a prediction file for the test set.
