@@ -6,7 +6,7 @@ The data are not provided here since it is big and confidential! :P
 ```
 
 ## Challenge
-Basically, we want to track the movement of the ice. To track the ice movement, we need the ice velocity. To predict ice velocity, we have information (features) related to winds and the environment. We are given a formula (free drift of sea ice​) if we want to combine some features to have less features. 
+Basically, we want to track the movement of the ice. To track the ice movement, we need the ice velocity. To predict ice velocity, we have information (features) related to winds and the environment. We are given a formula (free drift of sea ice) if we want to combine some features to have less features. 
 And of course we cannot use the information at t+1 to predict the velocity at time t (in real life we don’t have information from the future).
 
 ## Data
