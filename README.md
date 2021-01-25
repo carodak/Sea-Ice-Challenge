@@ -44,5 +44,5 @@ Predict u_buoy, v_buoy with u_ERA5, v_ERA5 and any other feature we consider rel
 - Random Forest: 15.9 MSE
 - MLP: 19.5 MSE
 
-Best regressor model (RandomForest): 15.9 MSE with our CV method.
+Best regressor model (RandomForest): 15.9 MSE on validation set with Cross-validation (5-Fold) and 80/20 split.
 We submitted a prediction file for the test set.
