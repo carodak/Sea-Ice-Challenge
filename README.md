@@ -38,5 +38,11 @@ id_buoy: can not be used for the prediction
 Predict u_buoy, v_buoy with u_ERA5, v_ERA5 and any other feature we consider relevant
 
 ## Results
+- (Baseline) Logistic Regression: 25.5 MSE
+- Ridge: 26.8 MSE
+- KNN: 18.8 MSE
+- Random Forest: 15.9 MSE
+- MLP: 19.5 MSE
+
 Best regressor model (RandomForest): 15.9 MSE with our CV method.
 We submitted a prediction file for the test set.
