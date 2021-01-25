@@ -5,7 +5,8 @@ Earth Rescuers is tackling the Sea Ice Challenge
 The loss of sea-ice has huge ramifications such as lowered global temperatures, and loss of species diversity in the Arctic ecosystem. This hackathon gives us an opportunity to understand more intimately the data that describes an aspect of this climate change issue and ultimately what we can do about it.
 
 ## What it does
-Using x_EASE','y_EASE','u_ERA5','v_ERA5','sic_CDR', 'h_cs2smos', 'h_piomas', 'd2c' it predicts 'u_buoy', 'v_buoy' Our predictions on the test set can be found on: Data/DRIFT_DATA_TEST.csv
+Using x_EASE, y_EASE, u_ERA5, v_ERA5, sic_CDR, h_cs2smos, h_piomas, d2c, it predicts u_buoy, v_buoy. 
+Our predictions on the test set can not be found here as the data were confidential.
 
 ## How we built it
 We first read the guidelines and reformulated the problem. Then we visualized the data using heatmap to see the correlation between data. As Machine Learning Problems tend to perform better with normalized data, we performed MinMaxScaler normalization. We then trained a simple linear regression model without any tuning as a baseline. We got our first results with a high MSE (25). We performed some feature reduction using PCA and read some literature to see which models could perform better. We also asked the mentors and got help from different panelists. We tried KNN (with k = 19 after performing GridSearch, MSE =18), Ridge, Random Forest (with n_estimators = 50 and max_features = sqrt after performing a GridSearch, MSE = 15). We had low ressource so we could not increase n_estimators to get better results. We also tried an MLP without any tuning (MSE = 19). All these models were trained using CV=5.
