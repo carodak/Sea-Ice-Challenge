@@ -2,6 +2,7 @@
 AILaunchLab Hackaton gave us the opportunity to quickly compile a model that could predict sea-ice movement
 
 ---
+**NOTE**
 
 The data are not provided here since it is big and confidential! :P
 
